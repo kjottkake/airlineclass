@@ -1,0 +1,27 @@
+.airplane {
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.seat {
+    height: 20px;
+    width: 20px;
+    background-color: salmon;
+    margin: 2px;
+}
+
+.econ {
+    background-color: lightblue;
+}
+
+.plus {
+    background-color: bisque;
+}
+
+.biz {
+    background-color: salmon;
+}
+
+.first {
+    background-color:lightgreen;
+}
