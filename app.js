@@ -43,6 +43,16 @@ let revenue = document.querySelector(".price");
 
 revenue.innerHTML = totalTrip;
 
+let econPriceHTML = document.querySelector("#priceEcon");
+let plusPriceHTML = document.querySelector("#pricePlus");
+let bizPriceHTML = document.querySelector("#priceBiz")
+let firstPriceHTML = document.querySelector("#priceFirst");
+
+econPriceHTML.innerHTML = economyPrice;
+plusPriceHTML.innerHTML = plusPrice;
+bizPriceHTML.innerHTML = bizPrice;
+firstPriceHTML.innerHTML = firstClassPrice;
+
 // for (let i = 0; i < econSeats; i++) {
 //     let econ = document.createElement("div");
 //     econ.classList.add('seat', 'econ');
