@@ -1,6 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
 .airplane {
-    background-color: lightgray;
+    background-color: darkgray;
     border: 1px solid black;
+}
+
+.econCabin {
+    /* display: inline-block; */
 }
 
 .seat {
@@ -8,6 +17,7 @@
     width: 20px;
     background-color: salmon;
     margin: 2px;
+    display: inline-block;
 }
 
 .econ {
@@ -24,4 +34,11 @@
 
 .first {
     background-color:lightgreen;
+}
+
+.info {
+    background-color: lightcoral;
+    padding: 5%;
+    border-radius: 15px;
+    margin: 2%;
 }

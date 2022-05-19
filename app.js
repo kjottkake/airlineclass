@@ -25,17 +25,27 @@ console.log("Total biz seats: $" + totalbiz);
 console.log("Total first class seats: $" + totalFirstClass);
 console.log("Total price of trip: $" + totalTrip);
 
-
-for (let i = 0; i < econSeats; i++) {
-    let econ = document.createElement("div");
-    econ.classList.add('seat', 'econ');
-    let econClass = document.querySelector(".airplane");
-    econClass.appendChild(econ);
+function populateSeats(numSeats, cabinClass, cabinName) {
+    for (let i = 0; i < numSeats; i++) {
+        let div = document.createElement("div");
+        div.classList.add('seat', `${cabinName}`);
+        let cabin = document.querySelector(`${cabinClass}`);
+        cabin.appendChild(div);
+    }    
 }
 
-// for (let i = 0; i < plusSeats; i++) {
-//     let plus = document.createElement("div");
-//     plus.classList.add('seat', 'plus');
-//     let econClass = document.querySelector(".airplane");
-//     econClass.appendChild(plus);
+populateSeats(econSeats, ".econCabin", "econ");
+populateSeats(plusSeats, ".plusCabin", "plus");
+populateSeats(bizSeats, '.bizCabin', 'biz');
+populateSeats(firstClassSeats, '.firstCabin', 'first');
+
+let revenue = document.querySelector(".price");
+
+revenue.innerHTML = totalTrip;
+
+// for (let i = 0; i < econSeats; i++) {
+//     let econ = document.createElement("div");
+//     econ.classList.add('seat', 'econ');
+//     let cabin = document.querySelector(".econCabin");
+//     cabin.appendChild(econ);
 // }
